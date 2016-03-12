@@ -88,7 +88,7 @@ case $KERNEL_VERSION in
     3.8-1-xenomai.x86-amd64)
         XENO_CONFIG=`which xeno-config`
         KERNEL_DEPENDS="$KERNEL_DEPENDS, linux-modules-$KERNEL_VERSION"
-        CONF_EXTRA="--enable-rtdm --enable-8139too --enable-e100 --enable-e1000 --enable-e1000e --enable-r8169"
+        CONF_EXTRA="--enable-rtdm --enable-e1000e --enable-debug-if --enable-cycles"
     ;;
     *)
 	echo "your kernel '$KERNEL_VERSION' is not known. There might be needed dependencies which won't get set automatically."
