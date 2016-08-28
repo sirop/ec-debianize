@@ -6,9 +6,9 @@
 
 @DPATCH@
 
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/e1000/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/Makefile.am	2015-05-06 09:58:43.745260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/e1000/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/Makefile.am	2015-05-06 09:58:43.745260774 -0400
 @@ -350,6 +350,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -17,9 +17,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am etherlab
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/Makefile.am	2015-05-06 09:58:43.749260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/Makefile.am	2015-05-06 09:58:43.749260774 -0400
 @@ -428,6 +428,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -28,9 +28,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am etherla
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/Makefile.am	2015-05-06 09:58:43.753260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/Makefile.am	2015-05-06 09:58:43.753260774 -0400
 @@ -186,6 +186,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -39,9 +39,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am etherlabmaster
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/dc_rtai/Makefile.am etherlabmaster-1.5.2+hg4b0b90/examples/dc_rtai/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/examples/dc_rtai/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/examples/dc_rtai/Makefile.am	2015-05-06 09:58:43.753260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/examples/dc_rtai/Makefile.am etherlabmaster-1.5.2-hg5a70ff/examples/dc_rtai/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/examples/dc_rtai/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/examples/dc_rtai/Makefile.am	2015-05-06 09:58:43.753260774 -0400
 @@ -44,6 +44,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -50,9 +50,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/dc_rtai/Makefile.am ether
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/mini/Makefile.am etherlabmaster-1.5.2+hg4b0b90/examples/mini/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/examples/mini/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/examples/mini/Makefile.am	2015-05-06 09:58:43.753260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/examples/mini/Makefile.am etherlabmaster-1.5.2-hg5a70ff/examples/mini/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/examples/mini/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/examples/mini/Makefile.am	2015-05-06 09:58:43.753260774 -0400
 @@ -46,6 +46,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -61,9 +61,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/mini/Makefile.am etherlab
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/rtai/Makefile.am etherlabmaster-1.5.2+hg4b0b90/examples/rtai/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/examples/rtai/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/examples/rtai/Makefile.am	2015-05-06 09:58:43.757260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/examples/rtai/Makefile.am etherlabmaster-1.5.2-hg5a70ff/examples/rtai/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/examples/rtai/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/examples/rtai/Makefile.am	2015-05-06 09:58:43.757260774 -0400
 @@ -44,6 +44,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -72,9 +72,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/rtai/Makefile.am etherlab
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/tty/Makefile.am etherlabmaster-1.5.2+hg4b0b90/examples/tty/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/examples/tty/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/examples/tty/Makefile.am	2015-05-06 09:58:43.757260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/examples/tty/Makefile.am etherlabmaster-1.5.2-hg5a70ff/examples/tty/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/examples/tty/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/examples/tty/Makefile.am	2015-05-06 09:58:43.757260774 -0400
 @@ -50,6 +50,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -83,9 +83,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/examples/tty/Makefile.am etherlabm
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/Makefile.am etherlabmaster-1.5.2+hg4b0b90/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/Makefile.am	2015-05-06 09:58:43.757260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/Makefile.am etherlabmaster-1.5.2-hg5a70ff/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/Makefile.am	2015-05-06 09:58:43.757260774 -0400
 @@ -88,7 +88,7 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -95,9 +95,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/Makefile.am etherlabmaster-1.5.2+h
  
  mydist:
  	hg log --style=changelog $(srcdir) > ChangeLog
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/master/Makefile.am etherlabmaster-1.5.2+hg4b0b90/master/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/master/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/master/Makefile.am	2015-05-06 09:58:43.757260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/master/Makefile.am etherlabmaster-1.5.2-hg5a70ff/master/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/master/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/master/Makefile.am	2015-05-06 09:58:43.757260774 -0400
 @@ -88,6 +88,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  
@@ -106,9 +106,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/master/Makefile.am etherlabmaster-
 +	$(MAKE) -i -C "$(LINUX_SOURCE_DIR)" M="@abs_srcdir@" clean
  
  #------------------------------------------------------------------------------
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/tty/Makefile.am etherlabmaster-1.5.2+hg4b0b90/tty/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/tty/Makefile.am	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/tty/Makefile.am	2015-05-06 09:58:43.761260774 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/tty/Makefile.am etherlabmaster-1.5.2-hg5a70ff/tty/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/tty/Makefile.am	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/tty/Makefile.am	2015-05-06 09:58:43.761260774 -0400
 @@ -46,6 +46,6 @@ modules_install:
  		INSTALL_MOD_DIR="$(INSTALL_MOD_DIR)" modules_install
  

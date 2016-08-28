@@ -6,9 +6,9 @@
 
 @DPATCH@
 
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/master/fsm_pdo_entry.c etherlabmaster-1.5.2+hg4b0b90/master/fsm_pdo_entry.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/master/fsm_pdo_entry.c	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/master/fsm_pdo_entry.c	2015-05-06 10:00:04.357263437 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/master/fsm_pdo_entry.c etherlabmaster-1.5.2-hg5a70ff/master/fsm_pdo_entry.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/master/fsm_pdo_entry.c	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/master/fsm_pdo_entry.c	2015-05-06 10:00:04.357263437 -0400
 @@ -224,7 +224,13 @@ void ec_fsm_pdo_entry_read_state_count(
          return;
      }

@@ -18,9 +18,9 @@
 
 @DPATCH@
 
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/configure.ac etherlabmaster-1.5.2+hg4b0b90/configure.ac
---- etherlabmaster-1.5.2+hg4b0b90.orig/configure.ac	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/configure.ac	2015-05-06 11:56:12.637493671 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/configure.ac etherlabmaster-1.5.2-hg5a70ff/configure.ac
+--- etherlabmaster-1.5.2-hg5a70ff.orig/configure.ac	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/configure.ac	2015-05-06 11:56:12.637493671 -0400
 @@ -561,40 +561,39 @@ AC_SUBST(RTAI_LXRT_LDFLAGS,[$rtai_lxrt_l
  # Xenomai path (optional)
  #------------------------------------------------------------------------------
@@ -77,9 +77,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/configure.ac etherlabmaster-1.5.2+
  AM_CONDITIONAL(ENABLE_XENOMAI, test "x$xeno" = "x1")
  AC_SUBST(ENABLE_XENOMAI,[$xeno])
  
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/master/Kbuild.in etherlabmaster-1.5.2+hg4b0b90/master/Kbuild.in
---- etherlabmaster-1.5.2+hg4b0b90.orig/master/Kbuild.in	2015-02-19 09:19:29.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/master/Kbuild.in	2015-05-06 11:54:47.137490846 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/master/Kbuild.in etherlabmaster-1.5.2-hg5a70ff/master/Kbuild.in
+--- etherlabmaster-1.5.2-hg5a70ff.orig/master/Kbuild.in	2015-02-19 09:19:29.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/master/Kbuild.in	2015-05-06 11:54:47.137490846 -0400
 @@ -85,7 +85,7 @@ ifeq (@ENABLE_RTDM@,1)
  ec_master-objs += rtdm.o
  

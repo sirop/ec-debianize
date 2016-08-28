@@ -5,9 +5,9 @@
 ## DP: Add network drivers for 3.5 kernel series.
 
 @DPATCH@
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/8139too-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/8139too-3.5-ethercat.c	2015-05-06 10:20:28.901303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/8139too-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/8139too-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/8139too-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/8139too-3.5-ethercat.c	2015-05-06 10:20:28.901303896 -0400
 @@ -0,0 +1,2844 @@
 +/******************************************************************************
 + *
@@ -2853,9 +2853,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-ethercat.c eth
 +
 +module_init(rtl8139_init_module);
 +module_exit(rtl8139_cleanup_module);
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/8139too-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/8139too-3.5-orig.c	2015-05-06 10:20:28.905303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/8139too-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/8139too-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/8139too-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/8139too-3.5-orig.c	2015-05-06 10:20:28.905303896 -0400
 @@ -0,0 +1,2683 @@
 +/*
 +
@@ -5540,9 +5540,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/8139too-3.5-orig.c etherla
 +
 +module_init(rtl8139_init_module);
 +module_exit(rtl8139_cleanup_module);
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000-3.5-ethercat.h	2015-05-06 10:20:28.905303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000-3.5-ethercat.h	2015-05-06 10:20:28.905303896 -0400
 @@ -0,0 +1,369 @@
 +/*******************************************************************************
 +
@@ -5913,9 +5913,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-ethercat.h
 +extern char *e1000_get_hw_dev_name(struct e1000_hw *hw);
 +
 +#endif /* _E1000_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000-3.5-orig.h	2015-05-06 10:20:28.905303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000-3.5-orig.h	2015-05-06 10:20:28.905303896 -0400
 @@ -0,0 +1,364 @@
 +/*******************************************************************************
 +
@@ -6281,9 +6281,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000-3.5-orig.h eth
 +extern char *e1000_get_hw_dev_name(struct e1000_hw *hw);
 +
 +#endif /* _E1000_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_ethtool-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_ethtool-3.5-ethercat.c	2015-05-06 10:20:28.905303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_ethtool-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_ethtool-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_ethtool-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_ethtool-3.5-ethercat.c	2015-05-06 10:20:28.905303896 -0400
 @@ -0,0 +1,1859 @@
 +/*******************************************************************************
 +
@@ -8144,9 +8144,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-et
 +{
 +	SET_ETHTOOL_OPS(netdev, &e1000_ethtool_ops);
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_ethtool-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_ethtool-3.5-orig.c	2015-05-06 10:20:28.905303896 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_ethtool-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_ethtool-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_ethtool-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_ethtool-3.5-orig.c	2015-05-06 10:20:28.905303896 -0400
 @@ -0,0 +1,1859 @@
 +/*******************************************************************************
 +
@@ -10007,9 +10007,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_ethtool-3.5-or
 +{
 +	SET_ETHTOOL_OPS(netdev, &e1000_ethtool_ops);
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-ethercat.c	2015-05-06 10:20:28.909303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-ethercat.c	2015-05-06 10:20:28.909303897 -0400
 @@ -0,0 +1,5820 @@
 +/*******************************************************************************
 +
@@ -15831,9 +15831,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-etherca
 +	msleep(10);
 +	return E1000_SUCCESS;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-ethercat.h	2015-05-06 10:20:28.913303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-ethercat.h	2015-05-06 10:20:28.913303897 -0400
 @@ -0,0 +1,3112 @@
 +/*******************************************************************************
 +
@@ -18947,9 +18947,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-etherca
 +#define AUTONEG_ADVERTISE_10_ALL        0x0003	/* 10Mbps Full & Half speeds */
 +
 +#endif /* _E1000_HW_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-orig.c	2015-05-06 10:20:28.913303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-orig.c	2015-05-06 10:20:28.913303897 -0400
 @@ -0,0 +1,5820 @@
 +/*******************************************************************************
 +
@@ -24771,9 +24771,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.c 
 +	msleep(10);
 +	return E1000_SUCCESS;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_hw-3.5-orig.h	2015-05-06 10:20:28.917303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_hw-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_hw-3.5-orig.h	2015-05-06 10:20:28.917303897 -0400
 @@ -0,0 +1,3112 @@
 +/*******************************************************************************
 +
@@ -27887,9 +27887,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_hw-3.5-orig.h 
 +#define AUTONEG_ADVERTISE_10_ALL        0x0003	/* 10Mbps Full & Half speeds */
 +
 +#endif /* _E1000_HW_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_main-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_main-3.5-ethercat.c	2015-05-06 10:20:28.917303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_main-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_main-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_main-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_main-3.5-ethercat.c	2015-05-06 10:20:28.917303897 -0400
 @@ -0,0 +1,5379 @@
 +/*******************************************************************************
 +
@@ -33270,9 +33270,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-ether
 +}
 +
 +/* e1000_main.c */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_main-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_main-3.5-orig.c	2015-05-06 10:20:28.921303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_main-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_main-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_main-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_main-3.5-orig.c	2015-05-06 10:20:28.921303897 -0400
 @@ -0,0 +1,5213 @@
 +/*******************************************************************************
 +
@@ -38487,9 +38487,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_main-3.5-orig.
 +}
 +
 +/* e1000_main.c */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_osdep-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_osdep-3.5-ethercat.h	2015-05-06 10:20:28.921303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_osdep-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_osdep-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_osdep-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_osdep-3.5-ethercat.h	2015-05-06 10:20:28.921303897 -0400
 @@ -0,0 +1,109 @@
 +/*******************************************************************************
 +
@@ -38600,9 +38600,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-ethe
 +    readw((a)->flash_address + reg))
 +
 +#endif /* _E1000_OSDEP_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_osdep-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_osdep-3.5-orig.h	2015-05-06 10:20:28.921303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_osdep-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_osdep-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_osdep-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_osdep-3.5-orig.h	2015-05-06 10:20:28.921303897 -0400
 @@ -0,0 +1,109 @@
 +/*******************************************************************************
 +
@@ -38713,9 +38713,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_osdep-3.5-orig
 +    readw((a)->flash_address + reg))
 +
 +#endif /* _E1000_OSDEP_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_param-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_param-3.5-ethercat.c	2015-05-06 10:20:28.921303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_param-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_param-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_param-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_param-3.5-ethercat.c	2015-05-06 10:20:28.921303897 -0400
 @@ -0,0 +1,755 @@
 +/*******************************************************************************
 +
@@ -39472,9 +39472,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-ethe
 +	}
 +}
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_param-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/e1000_param-3.5-orig.c	2015-05-06 10:20:28.925303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_param-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_param-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/e1000_param-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/e1000_param-3.5-orig.c	2015-05-06 10:20:28.925303897 -0400
 @@ -0,0 +1,755 @@
 +/*******************************************************************************
 +
@@ -40231,9 +40231,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/e1000_param-3.5-orig
 +	}
 +}
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/e1000/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am	2015-05-06 10:19:58.665302897 -0400
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000/Makefile.am	2015-05-06 10:20:28.925303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/e1000/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000/Makefile.am	2015-05-06 10:19:58.665302897 -0400
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000/Makefile.am	2015-05-06 10:20:28.925303897 -0400
 @@ -70,6 +70,8 @@ EXTRA_DIST = \
  	e1000-3.16-orig.h \
  	e1000-3.4-ethercat.h \
@@ -40290,9 +40290,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000/Makefile.am etherlab
  	e1000_param-3.6-ethercat.c \
  	e1000_param-3.6-orig.c \
  	e1000_param-3.8-ethercat.c \
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/80003es2lan-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/80003es2lan-3.5-ethercat.c	2015-05-06 10:20:28.925303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/80003es2lan-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/80003es2lan-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/80003es2lan-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/80003es2lan-3.5-ethercat.c	2015-05-06 10:20:28.925303897 -0400
 @@ -0,0 +1,1501 @@
 +/*******************************************************************************
 +
@@ -41795,9 +41795,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-eth
 +	.nvm_ops		= &es2_nvm_ops,
 +};
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/80003es2lan-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/80003es2lan-3.5-orig.c	2015-05-06 10:20:28.929303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/80003es2lan-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/80003es2lan-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/80003es2lan-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/80003es2lan-3.5-orig.c	2015-05-06 10:20:28.929303897 -0400
 @@ -0,0 +1,1501 @@
 +/*******************************************************************************
 +
@@ -43300,9 +43300,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/80003es2lan-3.5-ori
 +	.nvm_ops		= &es2_nvm_ops,
 +};
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/82571-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/82571-3.5-ethercat.c	2015-05-06 10:20:28.929303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/82571-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/82571-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/82571-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/82571-3.5-ethercat.c	2015-05-06 10:20:28.929303897 -0400
 @@ -0,0 +1,2117 @@
 +/*******************************************************************************
 +
@@ -45421,9 +45421,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-ethercat.
 +	.nvm_ops		= &e82571_nvm_ops,
 +};
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/82571-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/82571-3.5-orig.c	2015-05-06 10:20:28.929303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/82571-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/82571-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/82571-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/82571-3.5-orig.c	2015-05-06 10:20:28.929303897 -0400
 @@ -0,0 +1,2117 @@
 +/*******************************************************************************
 +
@@ -47542,9 +47542,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/82571-3.5-orig.c et
 +	.nvm_ops		= &e82571_nvm_ops,
 +};
 +
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/defines-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/defines-3.5-ethercat.h	2015-05-06 10:20:28.929303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/defines-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/defines-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/defines-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/defines-3.5-ethercat.h	2015-05-06 10:20:28.929303897 -0400
 @@ -0,0 +1,862 @@
 +/*******************************************************************************
 +
@@ -48408,9 +48408,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-etherca
 +#define E1000_FWSM_WLOCK_MAC_SHIFT	7
 +
 +#endif /* _E1000_DEFINES_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/defines-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/defines-3.5-orig.h	2015-05-06 10:20:28.933303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/defines-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/defines-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/defines-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/defines-3.5-orig.h	2015-05-06 10:20:28.933303897 -0400
 @@ -0,0 +1,862 @@
 +/*******************************************************************************
 +
@@ -49274,9 +49274,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/defines-3.5-orig.h 
 +#define E1000_FWSM_WLOCK_MAC_SHIFT	7
 +
 +#endif /* _E1000_DEFINES_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/e1000-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/e1000-3.5-ethercat.h	2015-05-06 10:20:28.933303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/e1000-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/e1000-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/e1000-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/e1000-3.5-ethercat.h	2015-05-06 10:20:28.933303897 -0400
 @@ -0,0 +1,800 @@
 +/*******************************************************************************
 +
@@ -50078,9 +50078,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-ethercat.
 +	(readl((a)->hw_addr + reg + ((offset) << 2)))
 +
 +#endif /* _E1000_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/e1000-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/e1000-3.5-orig.h	2015-05-06 10:20:28.933303897 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/e1000-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/e1000-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/e1000-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/e1000-3.5-orig.h	2015-05-06 10:20:28.933303897 -0400
 @@ -0,0 +1,793 @@
 +/*******************************************************************************
 +
@@ -50875,9 +50875,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/e1000-3.5-orig.h et
 +	(readl((a)->hw_addr + reg + ((offset) << 2)))
 +
 +#endif /* _E1000_H_ */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ethtool-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ethtool-3.5-ethercat.c	2015-05-06 10:20:28.937303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ethtool-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ethtool-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ethtool-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ethtool-3.5-ethercat.c	2015-05-06 10:20:28.937303898 -0400
 @@ -0,0 +1,2070 @@
 +/*******************************************************************************
 +
@@ -52949,9 +52949,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-etherca
 +{
 +	SET_ETHTOOL_OPS(netdev, &e1000_ethtool_ops);
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ethtool-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ethtool-3.5-orig.c	2015-05-06 10:20:28.937303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ethtool-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ethtool-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ethtool-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ethtool-3.5-orig.c	2015-05-06 10:20:28.937303898 -0400
 @@ -0,0 +1,2070 @@
 +/*******************************************************************************
 +
@@ -55023,9 +55023,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ethtool-3.5-orig.c 
 +{
 +	SET_ETHTOOL_OPS(netdev, &e1000_ethtool_ops);
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-ethercat.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/hw-3.5-ethercat.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/hw-3.5-ethercat.h	2015-05-06 10:20:28.937303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/hw-3.5-ethercat.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/hw-3.5-ethercat.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/hw-3.5-ethercat.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/hw-3.5-ethercat.h	2015-05-06 10:20:28.937303898 -0400
 @@ -0,0 +1,1005 @@
 +/*******************************************************************************
 +
@@ -56032,9 +56032,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-ethercat.h e
 +};
 +
 +#endif
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-orig.h etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/hw-3.5-orig.h
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/hw-3.5-orig.h	2015-05-06 10:20:28.937303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/hw-3.5-orig.h etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/hw-3.5-orig.h
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/hw-3.5-orig.h	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/hw-3.5-orig.h	2015-05-06 10:20:28.937303898 -0400
 @@ -0,0 +1,1005 @@
 +/*******************************************************************************
 +
@@ -57041,9 +57041,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/hw-3.5-orig.h ether
 +};
 +
 +#endif
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ich8lan-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ich8lan-3.5-ethercat.c	2015-05-06 10:20:28.941303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ich8lan-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ich8lan-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ich8lan-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ich8lan-3.5-ethercat.c	2015-05-06 10:20:28.941303898 -0400
 @@ -0,0 +1,4636 @@
 +/*******************************************************************************
 +
@@ -61681,9 +61681,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-etherca
 +	.phy_ops		= &ich8_phy_ops,
 +	.nvm_ops		= &ich8_nvm_ops,
 +};
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ich8lan-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/ich8lan-3.5-orig.c	2015-05-06 10:20:28.945303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ich8lan-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ich8lan-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/ich8lan-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/ich8lan-3.5-orig.c	2015-05-06 10:20:28.945303898 -0400
 @@ -0,0 +1,4636 @@
 +/*******************************************************************************
 +
@@ -66321,9 +66321,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/ich8lan-3.5-orig.c 
 +	.phy_ops		= &ich8_phy_ops,
 +	.nvm_ops		= &ich8_nvm_ops,
 +};
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/mac-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/mac-3.5-ethercat.c	2015-05-06 10:20:28.945303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/mac-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/mac-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/mac-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/mac-3.5-ethercat.c	2015-05-06 10:20:28.945303898 -0400
 @@ -0,0 +1,1709 @@
 +/*******************************************************************************
 +
@@ -68034,9 +68034,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-ethercat.c 
 +		}
 +	}
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/mac-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/mac-3.5-orig.c	2015-05-06 10:20:28.945303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/mac-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/mac-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/mac-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/mac-3.5-orig.c	2015-05-06 10:20:28.945303898 -0400
 @@ -0,0 +1,1709 @@
 +/*******************************************************************************
 +
@@ -69747,9 +69747,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/mac-3.5-orig.c ethe
 +		}
 +	}
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am	2015-05-06 10:19:58.665302897 -0400
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/Makefile.am	2015-05-06 10:20:28.945303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/Makefile.am	2015-05-06 10:19:58.665302897 -0400
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/Makefile.am	2015-05-06 10:20:28.945303898 -0400
 @@ -46,6 +46,8 @@ EXTRA_DIST = \
  	80003es2lan-3.16-orig.h \
  	80003es2lan-3.4-ethercat.c \
@@ -69867,9 +69867,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/Makefile.am etherla
  	phy-3.6-ethercat.c \
  	phy-3.6-orig.c \
  	phy-3.8-ethercat.c \
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/manage-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/manage-3.5-ethercat.c	2015-05-06 10:20:28.945303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/manage-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/manage-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/manage-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/manage-3.5-ethercat.c	2015-05-06 10:20:28.945303898 -0400
 @@ -0,0 +1,367 @@
 +/*******************************************************************************
 +
@@ -70238,9 +70238,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-ethercat
 +
 +	return false;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/manage-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/manage-3.5-orig.c	2015-05-06 10:20:28.949303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/manage-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/manage-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/manage-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/manage-3.5-orig.c	2015-05-06 10:20:28.949303898 -0400
 @@ -0,0 +1,367 @@
 +/*******************************************************************************
 +
@@ -70609,9 +70609,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/manage-3.5-orig.c e
 +
 +	return false;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/netdev-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/netdev-3.5-ethercat.c	2015-05-06 10:20:28.949303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/netdev-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/netdev-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/netdev-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/netdev-3.5-ethercat.c	2015-05-06 10:20:28.949303898 -0400
 @@ -0,0 +1,6762 @@
 +/*******************************************************************************
 +
@@ -77375,9 +77375,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-ethercat
 +MODULE_VERSION(DRV_VERSION);
 +
 +/* netdev.c */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/netdev-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/netdev-3.5-orig.c	2015-05-06 10:20:28.953303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/netdev-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/netdev-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/netdev-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/netdev-3.5-orig.c	2015-05-06 10:20:28.953303898 -0400
 @@ -0,0 +1,6586 @@
 +/*******************************************************************************
 +
@@ -83965,9 +83965,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/netdev-3.5-orig.c e
 +MODULE_VERSION(DRV_VERSION);
 +
 +/* netdev.c */
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/nvm-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/nvm-3.5-ethercat.c	2015-05-06 10:20:28.953303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/nvm-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/nvm-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/nvm-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/nvm-3.5-ethercat.c	2015-05-06 10:20:28.953303898 -0400
 @@ -0,0 +1,643 @@
 +/*******************************************************************************
 +
@@ -84612,9 +84612,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-ethercat.c 
 +	ew32(CTRL_EXT, ctrl_ext);
 +	e1e_flush();
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/nvm-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/nvm-3.5-orig.c	2015-05-06 10:20:28.953303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/nvm-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/nvm-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/nvm-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/nvm-3.5-orig.c	2015-05-06 10:20:28.953303898 -0400
 @@ -0,0 +1,643 @@
 +/*******************************************************************************
 +
@@ -85259,9 +85259,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/nvm-3.5-orig.c ethe
 +	ew32(CTRL_EXT, ctrl_ext);
 +	e1e_flush();
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/param-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/param-3.5-ethercat.c	2015-05-06 10:20:28.957303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/param-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/param-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/param-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/param-3.5-ethercat.c	2015-05-06 10:20:28.957303898 -0400
 @@ -0,0 +1,523 @@
 +/*******************************************************************************
 +
@@ -85786,9 +85786,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-ethercat.
 +		}
 +	}
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/param-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/param-3.5-orig.c	2015-05-06 10:20:28.957303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/param-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/param-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/param-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/param-3.5-orig.c	2015-05-06 10:20:28.957303898 -0400
 @@ -0,0 +1,523 @@
 +/*******************************************************************************
 +
@@ -86313,9 +86313,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/param-3.5-orig.c et
 +		}
 +	}
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/phy-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/phy-3.5-ethercat.c	2015-05-06 10:20:28.957303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/phy-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/phy-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/phy-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/phy-3.5-ethercat.c	2015-05-06 10:20:28.957303898 -0400
 @@ -0,0 +1,3361 @@
 +/*******************************************************************************
 +
@@ -89678,9 +89678,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-ethercat.c 
 +
 +	return 0;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/phy-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e1000e/phy-3.5-orig.c	2015-05-06 10:20:28.961303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/phy-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/phy-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e1000e/phy-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e1000e/phy-3.5-orig.c	2015-05-06 10:20:28.961303898 -0400
 @@ -0,0 +1,3361 @@
 +/*******************************************************************************
 +
@@ -93043,9 +93043,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e1000e/phy-3.5-orig.c ethe
 +
 +	return 0;
 +}
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/e100-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e100-3.5-ethercat.c	2015-05-06 10:20:28.961303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e100-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/e100-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e100-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e100-3.5-ethercat.c	2015-05-06 10:20:28.961303898 -0400
 @@ -0,0 +1,3348 @@
 +/******************************************************************************
 + *
@@ -96395,9 +96395,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-ethercat.c etherl
 +
 +module_init(e100_init_module);
 +module_exit(e100_cleanup_module);
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/e100-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/e100-3.5-orig.c	2015-05-06 10:20:28.965303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/e100-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/e100-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/e100-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/e100-3.5-orig.c	2015-05-06 10:20:28.965303898 -0400
 @@ -0,0 +1,3173 @@
 +/*******************************************************************************
 +
@@ -99572,9 +99572,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/e100-3.5-orig.c etherlabma
 +
 +module_init(e100_init_module);
 +module_exit(e100_cleanup_module);
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am etherlabmaster-1.5.2+hg4b0b90/devices/Makefile.am
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am	2015-05-06 10:19:58.669302897 -0400
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/Makefile.am	2015-05-06 10:20:28.965303898 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/Makefile.am etherlabmaster-1.5.2-hg5a70ff/devices/Makefile.am
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/Makefile.am	2015-05-06 10:19:58.669302897 -0400
++++ etherlabmaster-1.5.2-hg5a70ff/devices/Makefile.am	2015-05-06 10:20:28.965303898 -0400
 @@ -91,6 +91,8 @@ noinst_HEADERS = \
  	8139too-3.2-orig.c \
  	8139too-3.4-ethercat.c \
@@ -99602,9 +99602,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/Makefile.am etherlabmaster
  	r8169-3.6-ethercat.c \
  	r8169-3.6-orig.c \
  	r8169-3.8-ethercat.c \
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/r8169-3.5-ethercat.c etherlabmaster-1.5.2+hg4b0b90/devices/r8169-3.5-ethercat.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/r8169-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/r8169-3.5-ethercat.c	2015-05-06 10:20:28.969303899 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/r8169-3.5-ethercat.c etherlabmaster-1.5.2-hg5a70ff/devices/r8169-3.5-ethercat.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/r8169-3.5-ethercat.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/r8169-3.5-ethercat.c	2015-05-06 10:20:28.969303899 -0400
 @@ -0,0 +1,6804 @@
 +/*
 + * r8169.c: RealTek 8169/8168/8101 ethernet driver.
@@ -106410,9 +106410,9 @@ diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/r8169-3.5-ethercat.c ether
 +
 +module_init(rtl8169_init_module);
 +module_exit(rtl8169_cleanup_module);
-diff -urNp etherlabmaster-1.5.2+hg4b0b90.orig/devices/r8169-3.5-orig.c etherlabmaster-1.5.2+hg4b0b90/devices/r8169-3.5-orig.c
---- etherlabmaster-1.5.2+hg4b0b90.orig/devices/r8169-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
-+++ etherlabmaster-1.5.2+hg4b0b90/devices/r8169-3.5-orig.c	2015-05-06 10:20:28.973303899 -0400
+diff -urNp etherlabmaster-1.5.2-hg5a70ff.orig/devices/r8169-3.5-orig.c etherlabmaster-1.5.2-hg5a70ff/devices/r8169-3.5-orig.c
+--- etherlabmaster-1.5.2-hg5a70ff.orig/devices/r8169-3.5-orig.c	1969-12-31 19:00:00.000000000 -0500
++++ etherlabmaster-1.5.2-hg5a70ff/devices/r8169-3.5-orig.c	2015-05-06 10:20:28.973303899 -0400
 @@ -0,0 +1,6686 @@
 +/*
 + * r8169.c: RealTek 8169/8168/8101 ethernet driver.
